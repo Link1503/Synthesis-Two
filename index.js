@@ -23,7 +23,8 @@ async function init(token) {
             await interaction.createMessage({
                 content: 'To everyone who gets this message: You are perfect as you are, keep trying, you are worth it. There is alway someone who will help and love you <3'
             })
-        if (interaction?.data?.name === 'hey') {
+        }
+        else if (interaction?.data?.name === 'hey') {
             await interaction.createMessage({
                 content: 'Hu? Yeah I´m online. By the way how are ya?'
             })
