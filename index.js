@@ -25,5 +25,5 @@ async function init(token) {
     SynthesisTwo.connect();
 }
 
-const tokenFromStupidCommand = process.argv[2]
-init(tokenFromStupidCommand);
+const tokenFromCommand = process.argv[2]
+init(tokenFromCommand);
