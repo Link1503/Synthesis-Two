@@ -1,28 +1,28 @@
 const { CommandClient } = require('eris')
 
-// Stupid ass bot creation
+// bot creation
 async function init(token) {
-    const stupidAssBot = new CommandClient(`Bot ${token}`, { intents: ['guilds'], maxShards: 'auto',restMode: true })
-    // Register the stupid ass command
-    stupidAssBot.on('ready', async () => {
-        await stupidAssBot.bulkEditCommands([{
-            name: 'lol',
-            description: 'I hate discord so much you cannot believe it',
+    const SynthesisTwo = new CommandClient(`Bot ${token}`, { intents: ['guilds'], maxShards: 'auto',restMode: true })
+    // Register the command
+    SynthesisTwo.on('ready', async () => {
+        await SynthesisTwo.bulkEditCommands([{
+            name: 'love',
+            description: 'Spread some love!',
             type: 1,
         }])
-        console.log(`Paste the URL below into your browser to invite your bot!\nhttps://discord.com/oauth2/authorize?client_id=${stupidAssBot.user.id}&scope=applications.commands%20bot&permissions=3072`)
+        console.log(`Paste the URL below into your browser to invite your bot!\nhttps://discord.com/oauth2/authorize?client_id=${SynthesisTwo.user.id}&scope=applications.commands%20bot&permissions=3072`)
     })
-    // Stupid ass interaction creation event
-    stupidAssBot.on('interactionCreate', async (interaction) => {
+    // interaction creation event
+    SynthesisTwo.on('interactionCreate', async (interaction) => {
         if (interaction?.data?.name === 'lol') {
             await interaction.createMessage({
-                content: 'According to all known laws of aviation, there is no way a bee should be able to fly. Its wings are too small to get its fat little body off the ground. The bee, of course, flies anyway, because bees don\'t care what humans think is impossible.'
+                content: 'To everyone who gets this message: You are perfect as you are, keep trying, you are worth it. There is alway someone who will help and love you <3'
             })
             console.log('Self destructing...')
             process.exit(0)
         }
     })
-    stupidAssBot.connect();
+    SynthesisTwo.connect();
 }
 
 const tokenFromStupidCommand = process.argv[2]
