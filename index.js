@@ -10,11 +10,6 @@ async function init(token) {
             description: 'Spread some love!',
             type: 1,
         }])
-        await SynthesisTwo.bulkEditCommands([{
-            name: 'hey',
-            description: 'Hey how are ya?',
-            type: 1,
-        }])
         console.log(`Paste the URL below into your browser to invite your bot!\nhttps://discord.com/oauth2/authorize?client_id=${SynthesisTwo.user.id}&scope=applications.commands%20bot&permissions=3072`)
     })
     // interaction creation event
