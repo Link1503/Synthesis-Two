@@ -1,4 +1,4 @@
-# People deserve love so I remade this!
+#People deserve love so I updated this!
 
 ### How to use
 - Create an application at the [Developer panel](https://discord.com/developers/applications/) (or you can use a previously existing one)
